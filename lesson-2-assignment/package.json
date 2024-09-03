@@ -1,0 +1,15 @@
+{
+  "name": "json-assignment",
+  "version": "1.0.0",
+  "description": "modifying json files from the file system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Julie Zenou",
+  "license": "ISC",
+  "dependencies": {
+    "common.js": "^1.1.1"
+  }
+}
