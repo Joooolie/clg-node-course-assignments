@@ -11,8 +11,15 @@ student.forEach(person => {
 console.log('Parsed Students: ')
 console.log(parsedStudents);
 
-// Modify the array
-student[0]["age"] = ["23"];
+// Modify the array - this is assuming I know that John Doe is the first object
+//student[0]['age'] = '23';
+
+// If I did not know where John was
+student.forEach(person => {
+    if (person.firstName === 'John') {
+        person['age'] = '23'
+    }
+});
 
 // Check for age and print result
 student.forEach(person => {
