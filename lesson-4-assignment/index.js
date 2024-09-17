@@ -14,6 +14,10 @@ app.get('/firstUser/:id/', (req,res) => {
     res.send(`Hi there, your user ID is ${req.params.id}`);
 })
 
+app.all('*', (req, res) => {
+    res.status(404).send('<h1>404! Page not found</h1>');
+  });
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 });
