@@ -10,8 +10,8 @@ app.get('/firstServer/', (req,res) => {
     res.send("Hi There! This is my first route built using express framework");
 })
 
-app.get('/firstUser:id/', (req,res) => {
-    res.send("Hi there, your user ID is ...");
+app.get('/firstUser/:id/', (req,res) => {
+    res.send(`Hi there, your user ID is ${req.params.id}`);
 })
 
 app.listen(port, () => {
